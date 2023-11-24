@@ -1,0 +1,28 @@
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #b5b5b5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilos para a logo */
+  .logo {
+    width: 75px; 
+    height: 75px; 
+    background-image: url('flor.png');
+    background-repeat: no-repeat;
+  }
+  
+ 
+  .search-bar {
+    flex: 0.5; 
+    margin: 0 10px;
+  }
+  
+ 
+  .login-icon {
+    width: 30px; 
+  }
+  
