@@ -1,6 +1,6 @@
 /* Estilos para a barra de navegação */
 .navbar {
-    background-color: #b5b5b5;
+    background-color: rgb(255, 49, 118);
     padding: 15px;
     display: flex;
     justify-content: space-between;
