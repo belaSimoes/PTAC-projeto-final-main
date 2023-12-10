@@ -1,28 +1,24 @@
-/* Estilos para a barra de navegação */
+/* home.css */
+body {
+  margin: 0; /* Remover margem padrão do corpo */
+}
+
 .navbar {
-    background-color: rgb(255, 49, 118);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Estilos para a logo */
-  .logo {
-    width: 75px; 
-    height: 75px; 
-    background-image: url('laco.png');
-    background-repeat: no-repeat;
-  }
-  
- 
-  .search-bar {
-    flex: 0.5; 
-    margin: 0 10px;
-  }
-  
- 
-  .login-icon {
-    width: 30px; 
-  }
-  
+  background-color: rgb(255, 49, 118);
+  padding: 15px;
+  height: 60px; /* Ajustando a altura para ocupar o topo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  background-image: url('laco.png');
+  background-repeat: no-repeat;
+}
+
+.login-icon {
+  width: 30px;
+}
