@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PaginaPrincipal from './Home';
-import PaginaCadastro from './registro';
-import PaginaEmDestaque from './destaque';
-import PaginaDetalhes from './detalhes';
+import PaginaCadastro from './Registro';
+import PaginaEmDestaque from './Destaque';
+import PaginaDetalhes from './Detalhes';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
