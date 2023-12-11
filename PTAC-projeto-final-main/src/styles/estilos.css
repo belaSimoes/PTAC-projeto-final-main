@@ -127,12 +127,12 @@ button:hover {
 
 /* Estilizando a exibição dos vídeos na página inicial */
 .values-area {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Três colunas */
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os vídeos quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os vídeos */
+    gap: 20px; /* Espaçamento entre os vídeos */
     padding: 20px; /* Espaçamento interno */
-    justify-content: center; /* Alinhamento horizontal no centro */
-    align-items: center; /* Alinhamento vertical no centro */
+    background-color: rgb(255, 255, 255); /* Altere para a cor desejada */
     margin-top: 40px; /* Espaçamento superior */
 }
 
@@ -144,8 +144,12 @@ button:hover {
     background: linear-gradient(to bottom, #ff69b4, #4e54c8); /* Variação de cor no background */
     padding: 20px;
     color: white;
-    margin: 30px; /* Margem externa para espaçamento entre os vídeos */
+    width: calc(33.33% - 40px); /* Define a largura de cada vídeo */
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
 
-
-
+/* Clearfix para lidar com problemas de alinhamento de elementos */
+.values-area::after {
+    content: "";
+    flex: auto;
+}
