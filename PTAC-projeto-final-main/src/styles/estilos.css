@@ -1,0 +1,151 @@
+/* Reset de estilos e fonte */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Navbar lateral */
+nav.sidebar {
+    width: 300px; /* Largura do navbar */
+    min-height: 100vh; /* Altura mínima para ocupar a tela inteira */
+    background: linear-gradient(to bottom, #ff6a97, #8fcafb); /* Alteração de cor no background */
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Alinhar os itens verticalmente */
+    padding: 20px;
+    box-sizing: border-box; /* Considerar padding e bordas como parte do tamanho */
+}
+
+/* Estilos para a lista no navbar */
+nav.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.sidebar li {
+    margin-bottom: 20px;
+}
+
+nav.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 30px;
+}
+
+/* Estilos para os cartões de vídeo */
+.video-card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px;
+}
+
+/* Estilos para parágrafos */
+p {
+    color: #555;
+}
+
+/* Estilos para a navegação inferior */
+nav.bottom-nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav.bottom-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav.bottom-nav li {
+    margin: 0 10px;
+}   
+
+nav.bottom-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Adicione outros estilos conforme necessário abaixo deste ponto */
+
+/* Estilizando o formulário de adicionar vídeo */
+.card {
+    display: grid;
+    gap: 20px;
+    background: linear-gradient(to bottom, #ff6a97, #8fcafb); /* Variação de cor no background */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10% auto; /* Centraliza o grid na tela */
+    max-width: 500px; /* Limita a largura máxima do formulário */
+}
+
+/* Estilizando os elementos do formulário */
+label {
+    font-weight: bold;
+    color: #fff; /* Cor do texto */
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-family: 'Arial', sans-serif; /* Mudando a fonte */
+    width: 100%; /* Faz os inputs ocuparem toda a largura disponível */
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem a largura */
+}
+
+button {
+    background-color: #333; /* Cor do botão igual à do fundo */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555; /* Mudança de cor no hover */
+}
+
+/* Estilizando a exibição dos vídeos na página inicial */
+.values-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 20px;
+    padding: 20px; /* Espaçamento interno */
+    justify-content: center; /* Alinhamento horizontal no centro */
+    align-items: center; /* Alinhamento vertical no centro */
+    margin-top: 40px; /* Espaçamento superior */
+}
+
+/* Estilos para cada vídeo individual */
+.video-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #ff69b4, #4e54c8); /* Variação de cor no background */
+    padding: 20px;
+    color: white;
+    margin: 30px; /* Margem externa para espaçamento entre os vídeos */
+}
+
+
+
