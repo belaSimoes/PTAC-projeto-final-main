@@ -1,15 +1,16 @@
-/* home.css */
 body {
   margin: 0; /* Remover margem padrão do corpo */
 }
 
 .navbar {
-  background-color: rgb(255, 49, 118);
   padding: 15px;
-  height: 60px; /* Ajustando a altura para ocupar o topo */
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: changeColor 10s infinite;
+  width: 100%; /* Ocupar toda a largura da tela */
+  box-sizing: border-box; /* Incluir padding na largura total */
 }
 
 .logo {
@@ -21,4 +22,40 @@ body {
 
 .login-icon {
   width: 30px;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #ff74a3;
+  }
+  20% {
+    background-color: rgb(253, 138, 182);
+  }
+  40% {
+    background-color: #ff7fb0;
+  }
+  60% {
+    background-color: rgb(253, 138, 182);
+  }
+  80% {
+    background-color: rgb(253, 138, 182);
+  }
+  100% {
+    background-color: #ff74a3;
+  }
+}
+
+.login-button {
+  padding: 10px 20px;
+  border: 2px solid rgb(199, 0, 99); /* Adicionando a borda ao botão */
+  border-radius: 5px;
+  background-color: rgb(255, 214, 227);
+  color: rgb(255, 0, 119);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #ff90c2;
 }
