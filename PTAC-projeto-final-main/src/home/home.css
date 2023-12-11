@@ -1,79 +1,41 @@
+/* home.css */
 
 body {
   margin: 0;
+  padding: 0;
+  background: linear-gradient(to right bottom, #ff7eb3, #ff6ca9, #ff5a9f, #ff4895, #ff368b);
+  /* Substitua os códigos de cor pelos tons de rosa desejados */
+  /* Pode ajustar a direção do gradiente alterando 'to right bottom' */
+  /* Experimente outras cores ou tons de rosa conforme preferir */
 }
 
-
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Altura total da viewport */
+/* Estilos para a sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100px;
+  background-color: #ff69b4; /* Cor de fundo para a barra lateral */
 }
 
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-  background-color: #ff69b4;
+/* Estilos para os links na sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Estilos para o logo */
-.logo {
-  width: 75px;
-  height: 75px;
-  background-image: url('laco.png');
-  background-repeat: no-repeat;
+.sidebar ul li {
+  margin-bottom: 10px;
 }
 
-/* Estilos para a grid-container */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 20px; /* Espaçamento acima da grid */
-}
-
-/* Estilos para os itens da grid */
-.grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Estilos para os botões de navegação */
-.nav-button {
-  padding: 10px 20px;
-  border: 2px solid #ff69b4;
-  border-radius: 5px;
-  background-color: #ff69b4;
+.sidebar ul li a {
+  text-decoration: none;
   color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 5px 10px;
+  display: block;
 }
 
-.nav-button:hover {
-  background-color: #ff4f9e;
-}
-
-/* Estilos para o botão de login */
-.login-button {
-  padding: 10px 20px;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  background-color: transparent;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-button:hover {
-  background-color: #fff;
-  color: #ff69b4;
+.sidebar ul li a:hover {
+  background-color: #ff4f9e; /* Cor de fundo ao passar o mouse nos links */
 }

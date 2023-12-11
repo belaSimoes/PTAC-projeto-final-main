@@ -1,18 +1,19 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Detalhes from './detalhes/Detalhes'; 
-import Destaque from './destaque/Destaque'; 
+import PaginaPrincipal from './Home';
+import PaginaCadastro from './registro';
+import PaginaEmDestaque from './destaque';
+import PaginaDetalhes from './detalhes';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detalhes" element={<Detalhes />} /> {/* Usando o componente Detalhes */}
-        <Route path="/destaque" element={<Destaque />} /> {/* Usando o componente Destaque */}
+        <Route path="/" element={<PaginaPrincipal />} />
+        <Route path="/registro" element={<PaginaCadastro />} />
+        <Route path="/destaque" element={<PaginaEmDestaque />} />
+        <Route path="/detalhes/:id" element={<PaginaDetalhes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
