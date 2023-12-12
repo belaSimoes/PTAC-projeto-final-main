@@ -10,10 +10,11 @@ export default function Home() {
             <nav className="sidebar">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/Destaque">Em Destaque</a></li>
-                    <li><a href="/registro">Novo Vídeo</a></li>
+                    <li><a href="/destaque">Destaques</a></li>
+                    <li><a href="/registro">Adicionar Vídeo</a></li>
                 </ul>
             </nav>
+            
             <div className="values-area">
                 {pegarvideos.map((item, index) => (
                     <div key={item.id}>
