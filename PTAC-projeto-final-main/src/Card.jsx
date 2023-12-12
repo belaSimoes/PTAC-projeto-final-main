@@ -3,7 +3,7 @@ import { Link as RedirectLink } from 'react-router-dom';
 import './styles/estilos.css';
 
 export default function Card({ item }) {
-    const videomostra = item.url.slice(17)
+    const vidRef = item.url && typeof item.url === 'string' && item.url.slice(17);
 
     return (
         <RedirectLink to={`/detalhes/${item.id}`}>
