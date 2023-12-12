@@ -133,11 +133,9 @@ button:hover {
     margin-top: 40px;
 }
 
-/* ... (outros estilos) ... */
-
-/* Estilos para a exibição dos vídeos */
+/* Estilos para a exibição dos vídeos na página inicial */
 .values-area {
-    display: grid; /* Use apenas uma definição, escolha grid ou flex conforme necessário */
+    display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
     gap: 20px; /* Espaçamento entre os vídeos */
     padding: 20px; /* Espaçamento interno */
