@@ -1,20 +1,20 @@
-import React from 'react';
-import { createRoot } from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Registro from './registro';
-import Detalhes from './detalhes';
-import Destaque from './destaque';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import Registro from './registro'
+import Destaque from './destaque'
+import Detalhes from './detalhes'
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/registro" element={<Registro />} />
-        <Route path="/destaque" element={<Destaque />} />
-        <Route path="/detalhes/:id" element={<Detalhes />} />
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/registro" element={<Registro />}></Route>
+        <Route path="/destaque" element={<Destaque />}></Route>
+        <Route path="/detalhes/:id" element={<Detalhes />}></Route>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
-);
+  </React.StrictMode>,
+)

@@ -1,33 +1,29 @@
-import "./home.css"
-import Card from "./card";
-import "./home.css"
+import React from 'react';
+import Card from './card';
 
-export default function destaque(){
-    const pegalosv = JSON.parse(localStorage.getItem('Lista')) || [];
-    console.log(pegalosv);
-    return(
-    <div><body>
-        <div class="container">
-        <nav class="vertcal">
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./destaque.jsx">Destaques</a></li>
-                <li><a href="/registro">Adicionar Vídeo</a></li>
-            </ul>
-        </nav>
+function Destaque() {
+    const pegarVideos = JSON.parse(localStorage.getItem('Lista')) || [];
 
-
-        <div>
-          <div className="values-area">
-            {pegalosv.slice(-4).map((item,index) => (
-              <div key={item.id}>
-                <Card key={index} item={item}></Card>
-              </div>
-            ))}
-          </div>
+    return (
+        <div className="container">
+            <nav className="sidebar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/destaque">Em Destaque</a></li>
+                    <li><a href="/registro">Novo Vídeo</a></li>
+                </ul>
+            </nav>
+            <div className="content">
+                <div className="values-area">
+                    {pegarVideos.slice(-4).map((item, index) => (
+                        <div key={index}>
+                            <Card item={item} />
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
-      </div>
-      
-     </body></div>
-    )
+    );
 }
+
+export default Destaque;
