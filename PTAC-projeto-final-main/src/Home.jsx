@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './card';
-import './home.css'; // Importe o arquivo CSS corretamente
-
+import './home.css'; 
 export default function Home() {
     const pegarvideos = JSON.parse(localStorage.getItem('Lista')) || [];
     console.log(pegarvideos);

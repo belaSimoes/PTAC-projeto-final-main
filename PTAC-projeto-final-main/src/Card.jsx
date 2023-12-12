@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Card({ item }) {
-    // Verifica se item está definido e se item.url está definido antes de executar o slice
     const videomostra = item && item.url ? item.url.slice(17) : '';
 
     return (
