@@ -1,23 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Card from './Card';
-import './styles/estilos.css';
+import Card from "./card";
+import "./home.css"
 
-export default function DetalhesPagina() {
+export default function detalhes(){
     const { id } = useParams();
-    const listaSalva = JSON.parse(localStorage.getItem('Lista')) || [];
-    const videoSelecionado = listaSalva.find((objeto) => objeto.id == id) || null;
+    const pergarvideos= JSON.parse(localStorage.getItem('Lista')) || [];
+    const pegarumvideo= pergarvideos.find((objeto) => objeto.id == id) || null;
+    return(
+    <div>
 
-    return (
-        <div className="container">
-            <nav className="sidebar">
-                <ul>
-                    <li><a href="/">Página Inicial</a></li>
-                    <li><a href="/destaque">Destaques</a></li>
-                    <li><a href="/registro">Adicionar Vídeo</a></li>
-                </ul>
-            </nav>
-            <Card item={videoSelecionado} />
-        </div>
-    );
+        <body>
+        <div class="container">
+        
+
+        <nav class="sidebar">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="/destaque">Em Destaque</a></li>
+                <li><a href="/registro">Novo Vídeo</a></li>
+            </ul>
+        </nav>
+
+        <Card item={pegarumvideo}></Card>
+
+      </div>
+        
+    
+    
+     </body>
+ 
+    
+    </div>
+    )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from './card';
 import './styles/estilos.css';
 
 export default function Home() {
@@ -10,11 +10,11 @@ export default function Home() {
             <nav className="sidebar">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/destaque">Destaques</a></li>
+                    <li><a href="/Destaque.jsx">Destaques</a></li>
                     <li><a href="/registro">Adicionar Vídeo</a></li>
                 </ul>
             </nav>
-            
+
             <div className="values-area">
                 {pegarvideos.map((item, index) => (
                     <div key={item.id}>
