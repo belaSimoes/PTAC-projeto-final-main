@@ -12,8 +12,6 @@ export default function detalhes(){
 
         <body>
         <div class="container">
-        
-
         <nav class="sidebar">
             <ul>
                 <li><a href="./">Home</a></li>
