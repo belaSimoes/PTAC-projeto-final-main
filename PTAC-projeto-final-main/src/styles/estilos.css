@@ -84,13 +84,11 @@ nav.bottom-nav a {
     color: #fff;
 }
 
-/* Adicione outros estilos conforme necessário abaixo deste ponto */
 
-/* Estilizando o formulário de adicionar vídeo */
 .card {
     display: grid;
     gap: 20px;
-    background: linear-gradient(to bottom, #ff6a97, #8fcafb); /* Variação de cor no background */
+    background: linear-gradient(to bottom, #fd80a6, #a0d4ff); 
     padding: 20px;
     border-radius: 8px;
     margin: 10% auto; /* Centraliza o grid na tela */
@@ -151,7 +149,7 @@ button:hover {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to bottom, #ff769f, #9bd2ff); /* Gradiente de cor de fundo */
+    background: linear-gradient(to bottom, #fd80a6, #a0d4ff); /* Gradiente de cor de fundo */
     padding: 20px;
     color: white;
     width: 300px; /* Defina o tamanho fixo dos vídeos */

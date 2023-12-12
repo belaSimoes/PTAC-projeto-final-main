@@ -18,7 +18,7 @@ export default function Card({ item }) {
                         allowFullScreen
                     ></iframe>
                 ) : (
-                    
+                    <p>Video não disponível</p>
                 )}
                 <div className="video-info">
                     <h6>{item.Titulo}</h6>
