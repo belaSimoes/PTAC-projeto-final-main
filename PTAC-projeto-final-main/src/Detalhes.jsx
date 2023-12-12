@@ -9,7 +9,6 @@ export default function detalhes(){
     const pegarumvideo= pergarvideos.find((objeto) => objeto.id == id) || null;
     return(
     <div>
-
         <body>
         <div class="container">
         <nav class="sidebar">
@@ -19,16 +18,10 @@ export default function detalhes(){
                 <li><a href="/registro">Novo Vídeo</a></li>
             </ul>
         </nav>
-
         <Card item={pegarumvideo}></Card>
 
       </div>
-        
-    
-    
      </body>
- 
-    
     </div>
     )
 }
