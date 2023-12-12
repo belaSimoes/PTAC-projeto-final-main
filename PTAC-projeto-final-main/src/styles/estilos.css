@@ -136,20 +136,24 @@ button:hover {
     margin-top: 40px; /* Espaçamento superior */
 }
 
+/* Estilos para a exibição dos vídeos na página inicial */
+.values-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgb(255, 255, 255); /* Cor de fundo */
+    margin-top: 40px; /* Espaçamento superior */
+}
+
 /* Estilos para cada vídeo individual */
 .video-card {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to bottom, #ff69b4, #4e54c8); /* Variação de cor no background */
+    background: linear-gradient(to bottom, #ff769f, #9bd2ff); /* Gradiente de cor de fundo */
     padding: 20px;
     color: white;
-    width: calc(33.33% - 40px); /* Define a largura de cada vídeo */
-    margin-bottom: 20px; /* Espaçamento inferior */
-}
-
-/* Clearfix para lidar com problemas de alinhamento de elementos */
-.values-area::after {
-    content: "";
-    flex: auto;
+    width: 300px; /* Defina o tamanho fixo dos vídeos */
+    height: 200px; /* Altura fixa para manter proporções */
 }

@@ -3,12 +3,11 @@ import { Link as RedirectLink } from 'react-router-dom';
 import './styles/estilos.css';
 
 export default function Card({ item }) {
-    // Verifica se item.url existe e tem o formato esperado antes de usar o slice(17)
     const vidRef = item.url && typeof item.url === 'string' && item.url.slice(17);
 
     return (
         <RedirectLink to={`/detalhes/${item.id}`}>
-            <div className="video-card-hidden">
+            <div className="video-card">
                 {vidRef ? (
                     <iframe
                         width="300"
@@ -19,10 +18,12 @@ export default function Card({ item }) {
                         allowFullScreen
                     ></iframe>
                 ) : (
-                    <p>Video não disponível</p>
+                    
                 )}
-                <h6>{item.Titulo}</h6>
-                <p>{item.Canal}</p>
+                <div className="video-info">
+                    <h6>{item.Titulo}</h6>
+                    <p>{item.Canal}</p>
+                </div>
             </div>
         </RedirectLink>
     );
