@@ -1,46 +1,75 @@
+/* Estilos para a página de registro */
+/* Estilos para o container do formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+}
+
+/* Estilos para o formulário de registro */
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para os rótulos (labels) dos campos */
+.input-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para os campos de entrada */
+.input-field {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos para o botão de salvar */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the destaque page */
+/* Coloque aqui os estilos específicos da página de destaque */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    max-width: 2000px;
-    margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
-}
-
-nav.sidebar {
-    width: 150px;
-    background: linear-gradient(45deg, #ffa8b6, #76fff8);
-    color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-}
-
-nav.sidebar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-
-nav.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav.sidebar li {
-    margin-bottom: 20px;
 }
 
 main {
     padding: 30px;
+    width: calc(100% - 320px);
+    margin-left: 300px;
 }
+
+
 
 .values-area {
     display: flex;
@@ -48,7 +77,6 @@ main {
     justify-content: space-between;
     padding-left: 20px; /* Adicione o espaçamento desejado */
 }
-
 
 .video-card {
     flex: 0 0 calc(33.33% - 20px);
@@ -78,9 +106,10 @@ nav.bottom-nav ul {
 
 nav.bottom-nav li {
     margin: 0 10px;
-}   
+}
 
 nav.bottom-nav a {
     text-decoration: none;
     color: #fff;
 }
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './card';
+import './home.css'; // Certifique-se de que o CSS está importado corretamente
 
 function Destaque() {
     const pegarVideos = JSON.parse(localStorage.getItem('Lista')) || [];
