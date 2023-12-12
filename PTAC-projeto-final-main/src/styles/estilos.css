@@ -1,4 +1,4 @@
-/* Reset de estilos e fonte */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -42,12 +42,11 @@ nav.sidebar a {
     font-size: 16px;
 }
 
-/* Estilos para o conteúdo principal */
+
 main {
     padding: 30px;
 }
 
-/* Estilos para os cartões de vídeo */
 .video-card {
     margin-bottom: 20px;
     border: 1px solid #ddd;
@@ -58,12 +57,12 @@ main {
     padding: 20px;
 }
 
-/* Estilos para parágrafos */
+
 p {
     color: #555;
 }
 
-/* Estilos para a navegação inferior */
+
 nav.bottom-nav {
     display: flex;
     justify-content: center;
@@ -91,14 +90,14 @@ nav.bottom-nav a {
     background: linear-gradient(to bottom, #fd80a6, #a0d4ff); 
     padding: 20px;
     border-radius: 8px;
-    margin: 10% auto; /* Centraliza o grid na tela */
-    max-width: 500px; /* Limita a largura máxima do formulário */
+    margin: 10% auto;
+    max-width: 500px; 
 }
 
-/* Estilizando os elementos do formulário */
+
 label {
     font-weight: bold;
-    color: #fff; /* Cor do texto */
+    color: #fff; 
 }
 
 input[type="text"],
@@ -107,9 +106,9 @@ button {
     border: none;
     border-radius: 4px;
     margin-top: 5px;
-    font-family: 'Arial', sans-serif; /* Mudando a fonte */
-    width: 100%; /* Faz os inputs ocuparem toda a largura disponível */
-    box-sizing: border-box; /* Garante que padding e bordas não aumentem a largura */
+    font-family: 'Arial', sans-serif; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 button {
@@ -120,23 +119,25 @@ button {
 }
 
 button:hover {
-    background-color: #555; /* Mudança de cor no hover */
+    background-color: #555; 
 }
 
-/* Estilizando a exibição dos vídeos na página inicial */
+
 .values-area {
     display: flex;
-    flex-wrap: wrap; /* Permite que os vídeos quebrem para a próxima linha */
-    justify-content: center; /* Centraliza os vídeos */
-    gap: 20px; /* Espaçamento entre os vídeos */
-    padding: 20px; /* Espaçamento interno */
-    background-color: rgb(255, 255, 255); /* Altere para a cor desejada */
-    margin-top: 40px; /* Espaçamento superior */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+    background-color: rgb(255, 255, 255); 
+    margin-top: 40px;
 }
 
-/* Estilos para a exibição dos vídeos na página inicial */
+/* ... (outros estilos) ... */
+
+/* Estilos para a exibição dos vídeos */
 .values-area {
-    display: grid;
+    display: grid; /* Use apenas uma definição, escolha grid ou flex conforme necessário */
     grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
     gap: 20px; /* Espaçamento entre os vídeos */
     padding: 20px; /* Espaçamento interno */

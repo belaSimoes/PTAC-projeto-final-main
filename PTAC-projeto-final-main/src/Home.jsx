@@ -10,7 +10,7 @@ export default function Home() {
             <nav className="sidebar">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/destaque">Em Destaque</a></li>
+                    <li><a href="/Destaque">Em Destaque</a></li>
                     <li><a href="/registro">Novo Vídeo</a></li>
                 </ul>
             </nav>
